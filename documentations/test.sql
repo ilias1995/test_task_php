@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 
 INSERT INTO `users` (`userId`, `userName`, `userPass`, `name`, `secondName`, `sex`, `privilege`, `birthDate`) VALUES (1, 'user', 'qwerty', 'admin', 'admin', 2, 1, '1995.04.25');
-INSERT INTO `users` (`userId`, `userName`, `userPass`, `name`, `secondName`, `sex`, `privilege`, `birthDate`) VALUES (1, 'iliyaz', 'qwerty', 'iliyaz', 'kazikhodzhaev', 1, 2, '1994.04.25');
+INSERT INTO `users` (`userId`, `userName`, `userPass`, `name`, `secondName`, `sex`, `privilege`, `birthDate`) VALUES (2, 'iliyaz', 'qwerty', 'iliyaz', 'kazikhodzhaev', 1, 2, '1994.04.25');
 
 --
 -- Table structure for table `usernotes`
