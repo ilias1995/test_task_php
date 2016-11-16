@@ -1,0 +1,39 @@
+Documentation for test task
+In this task i was use php5> apache2> and mysql5>
+For create this application i was use unix system(Xubuntu)
+Avery think will do in unix system.
+If you whant use this app pleas do this steps:
+
+1) install php, apache, mysql.
+	1) PHP. For install php5> pleas write this comand in your command line:
+			>sudo apt-get install php5.6 libapache2-mod-php5.6 php5.6-mcrypt
+	2) MySql. For install mysql pleas write this comand in your command line:
+			>sudo apt-get install mysql-server php5.6-mysql
+			>sudo mysql_install_db
+			>sudo mysql_secure_installation
+
+2) Change apache2 conf.
+	1) Write this line in your command line
+			>sudo nano /etc/apache2/mods-enabled/dir.conf
+	2) After that will open conf file where you can edit and pleas replase conf file to this code:
+			<IfModule mod_dir.c>
+			    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+			</IfModule>
+	3) After change pleas save conf file and restart apache, for restart apache pleas use this command:
+			>sudo service apache2 restart
+
+3) If avery think is ok go to next section. Pleas coppy avery files from tesk_task folder and coppy to /var/www/html/ after coppy pleas restart apache again.
+
+4)DataBase conf:
+
+			>DB name = test_auth;
+			>DB user = test_user;
+			>DB pass = test_pass;
+
+ I was add 2 users in database:
+
+			>username = user / password = qwerty (admin)
+			>username = iliyaz / password = qwerty (just user)
+
+If avery think is ok u can go to the browser write in url input 'localhos/' if avery think is ok it will work.
+
