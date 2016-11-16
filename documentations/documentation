@@ -12,7 +12,6 @@ If you whant use this app pleas do this steps:
 			>sudo apt-get install php5.6 libapache2-mod-php5.6 php5.6-mcrypt
 	2) MySql. For install mysql pleas write this comand in your command line:
 			>sudo apt-get install mysql-server php5.6-mysql
-			>sudo mysql_install_db
 			>sudo mysql_secure_installation
 
 2) Change apache2 conf.
@@ -25,8 +24,11 @@ If you whant use this app pleas do this steps:
 	3) After change pleas save conf file and restart apache, for restart apache pleas use this command:
 			>sudo service apache2 restart
 
+	4) Remove index.html from /var/www/html/. Use this command to remove file:
+			>sudo rm /var/www/html/index.html
+
 3) If avery think is ok go to next section. Pleas coppy avery files from test_task_php-maste folder and coppy to /var/www/html/ after coppy pleas restart apache again. For copy file from command line pleas open test_task_php-maste in command line and write this command to copy:
-			>cp addnote.html addnote.php change_user.php delete.php index.html login.php notes.php register.php update.php updating.php user_delete.php user_updating.php users.php /var/www/html/
+			>sudo cp addnote.html addnote.php change_user.php delete.php index.html login.php notes.php register.php update.php updating.php user_delete.php user_updating.php users.php /var/www/html/
 
 4)For work whit this application pleas create database with this parametrs:
 
